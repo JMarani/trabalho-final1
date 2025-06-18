@@ -170,3 +170,8 @@ Content-Type: application/json
   "idsPalestrantes": [2, 4]
 }
 ```
+
+## Running Tests
+
+Use `npm run build` to compile TypeScript and `npm test` to execute the unit tests.
+
