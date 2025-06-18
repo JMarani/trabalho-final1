@@ -1,0 +1,7 @@
+node_modules
+.dist
+/dist
+*.log
+trabalho-final-grupo-de-gue-main/node_modules/
+trabalho-final-grupo-de-gue-main/dist/
+trabalho-final-grupo-de-gue-main/db.sqlite

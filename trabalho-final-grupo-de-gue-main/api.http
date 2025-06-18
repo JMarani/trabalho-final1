@@ -1,0 +1,58 @@
+### List events
+GET http://localhost:3000/events
+Accept: application/json
+
+### Create department
+POST http://localhost:3000/departments
+Content-Type: application/json
+
+{
+  "name": "Engenharia",
+  "acronym": "ENG",
+  "head": "Prof. Silva"
+}
+
+### Create speaker
+POST http://localhost:3000/speakers
+Content-Type: application/json
+
+{
+  "name": "Dr. John",
+  "resume": "Pesquisador",
+  "institution": "UFPR"
+}
+
+### Create student
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "name": "Maria",
+  "registration": "12345",
+  "course": "Sistemas"
+}
+
+### Create event
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+  "name": "Semana Acadêmica",
+  "description": "Palestras",
+  "date": "2025-06-25T19:00:00",
+  "maxParticipants": 100,
+  "departmentId": 1,
+  "speakerIds": [1]
+}
+
+### Register student
+POST http://localhost:3000/events/1/registrations
+Content-Type: application/json
+
+{
+  "studentId": 1
+}
+
+### Cancel registration
+DELETE http://localhost:3000/registrations/1
+
